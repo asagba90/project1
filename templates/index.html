@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to victor's Reviews</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+         <style>
+      body {
+        background-color: #f3f4f7; 
+      }
+    </style>
+      
+</head>
+<body>
+	<nav class="navtop">
+		<div>
+			<h1>Victor's Reviews</h1>
+			<a href="{{ url_for('register') }}">Sign up</a>
+			<a href="{{ url_for('login') }}"><i class="fas fa-sign-out-alt"></i>Login</a>
+		</div>
+	</nav>
+	<div class="container mt-5">
+        <div class="jumbotron bg-secondary color-primary">
+            <h1 class="display-4">Victor's Reviews</h1>
+            <p class="lead">Your opinion matters</p>
+            <hr>
+            <p>Book reviews are written literary criticism of a paticular book. They are personal reader experience while reading a book, but since readers can have widely differing views of the same book, you can also add a rating to know how to your review and rate the book on a scale of one to five. so if not signed up click the button below. <b style="font-size: 16px;">And givnig your opinion</b></p>
+            <form action="/register"><button  class="btn btn-primary btn-lg" type="submit">Sign Up</button></form>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Saves Time, Decreases Risk to Readers</h3>
+                        <p class="card-text">Book reviews make books a known quantity. They decrease the risk to readers that a particular book will be not what they had in mind at all.<br /> <b>In fact, book reviews help potential readers become familiar with what a book is about, give them an idea of how they themselves might react to it and determine whether this particular book will be the right book for them right now.</b>
+                        	<br />Book reviews save readers time, prepare them for what they will find and offer them a greater chance of connecting with a particular book, even before they read the first page!</p>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Greater Visibility, Greater Chance of Getting Found</h3>
+                        <p class="card-text">Book reviews give books greater visibility and a greater chance of getting found by more readers.<br>
+On some websites, books that have more book reviews are more likely to be shown to prospective readers and buyers as compared to books with few or no book reviews.<br>
+Book reviews also help amplify your book’s reach among book clubs, bookstores, blogging communities and other opportunities to gain attention from new readers.<br>
+<strong>For an author, book reviews can open doors to new and bigger audiences.</strong></p>
+					</div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">More Sales</h3>
+                        <p class="card-text">Have you ever heard the phrase “Success begets success?” Or the term “social proof?” Books that have a lot of book reviews appear to be popular books. It’s human nature for people to be curious about what looks popular and want to check it out for themselves. As a result, a good number of book reviews can help lead to a snowball effect of book sales.<br>
+In other words, <b>the presence of book reviews can help validate the worthiness of a book and establish who the book’s audience is. Then once validated, other similar people are much more likely to want to join their peers and buy that same book.</b><br>
+Knowing this, some authors try to game the system by outright buying or inventing book reviews. But that’s not a good approach at all. Don’t do it. It’s not right and you’re better than that.<br>
+Soliciting real reviews from real people can help you as an authors achieve more sales in a completely ethical way.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

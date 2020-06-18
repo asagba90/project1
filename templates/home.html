@@ -1,10 +1,24 @@
 {% extends "layout.html" %}
 
-{% block title %}
-    Home
-{% endblock %}
+{% block title %}Home Page{% endblock %}
 
 {% block content %}
-    <h2>Home Page</h2>
-    <p>Welcome back, {{ username }}!</p>
+	<h2>Home page</h2>
+	<h2>{{ msg }}</h2>
+	<p>Hello, {{ username }}!</p>
+	<form id="search_form" method='POST' action="{{ url_for('result') }}" style="margin-left: 5px">
+		<input type="text" name="search" placeholder="search" required><button type="submit" name="submit"><i class="fa fa-search"></i></button>
+	</form>
+	<h3>{{ search_error }}</h3>
+	<div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Search The Book and Share Your Opinion</h3>
+                        <p class="card-text" style="font-family: sans-serif;">
+                        	To <b>Search</b> for the book you wish to review enter the <strong>Name of the Author</strong>, some part or the whole <b>ISBN</b> of be book or the <b>YEAR</b> it was published, in the search area above and click the search icon.<br><br>
+                        	<i>For example enter 553803700 or 553</i><br>
+                        	<i>You can try author name eg. <b>'Terry'</b></i><br>
+                        </p>
+                </div>
+            </div>
+
 {% endblock %}

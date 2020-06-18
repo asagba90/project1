@@ -1,24 +1,31 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    </head>
-    <body class="loggedin">
-        <nav class="navtop">
-            <div>
-                <h1>Victor's Reviews</h1>
+
+         <style>
+      body {
+        background-color: #435165; 
+      }
+    </style>
+      
+</head>
+<body class="loggedin">
+	<nav class="navtop">
+		<div>
+			<h1>Victor's Reviews</h1>
                 <a href="{{ url_for('home') }}"><i class="fas fa-home"></i>Home</a>
                 <a href="{{ url_for('profile') }}"><i class="fas fa-user-circle"></i>Profile</a>
                 <a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i>Logout</a>
-            </div>
-        </nav>
-        <div class="content">
+		</div>
+	</nav>
+	<div class="content">
             {% block content %}{% endblock %}
-        </div>
-    </body>
-</html>
+    </div>
+</body>
